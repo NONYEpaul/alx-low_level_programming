@@ -9,9 +9,9 @@ int main(void)
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		putchar(alph);
 		if (alph == 'q' || alph == 'e')
 			continue;
+		putchar(alph);
 	}
 
 	putchar('\n');
