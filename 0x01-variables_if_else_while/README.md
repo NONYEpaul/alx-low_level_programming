@@ -6,3 +6,5 @@ program that prints the alphabet in lowercase, and then in uppercase
 program that prints the alphabet in lowercase, followed by a new line
 program that prints all single digit numbers of base 10 starting from
 program that prints all single digit numbers of base 10 starting from 0
+program that prints the lowercase alphabet in reverse
+program that prints all possible combinations of single
