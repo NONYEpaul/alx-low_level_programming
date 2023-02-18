@@ -9,9 +9,9 @@ int main(void)
 
 	n = 0;
 
-	for (; n <= 9; n++)
+	for (; n <= 10; n++)
 
-		printf("%d", 9);
+		printf("%d", n);
 
 	return (0);
 }
