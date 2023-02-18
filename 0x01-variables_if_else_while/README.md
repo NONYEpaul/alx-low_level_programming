@@ -8,3 +8,4 @@ program that prints all single digit numbers of base 10 starting from
 program that prints all single digit numbers of base 10 starting from 0
 program that prints the lowercase alphabet in reverse
 program that prints all possible combinations of single
+program that prints all the numbers of base 16 in lowercase
