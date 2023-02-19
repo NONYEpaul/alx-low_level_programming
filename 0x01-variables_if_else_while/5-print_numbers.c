@@ -1,17 +1,17 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  *main - prints all single digit numbers of base 9 starting from 0
  *Return: 0
  */
 int main(void)
 {
-	int n;
+	int y;
 
-	n = 0;
-	for (; n < 10; n++)
+	for (y = 0; y < 10; y++)
+		printf("%d", y);
 
-		printf("%d", n);
+	printf("\n");
 
 	return (0);
 }
