@@ -5,10 +5,10 @@
 */
 int main(void)
 {
-	char alph;
+	char c;
 
-	for (alph = 'a'; alph <= 'z'; alph++)
-		_putchar(alph);
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
 	_putchar('\n');
 	return (0);
 }
