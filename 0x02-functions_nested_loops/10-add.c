@@ -1,17 +1,13 @@
 #include "main.h"
 /**
- * main - function that adds two integers and returns the result
+ * add - adds tow integers and returns the result
+ * @x: number being added
+ *
+ * @y: number being addeed
+ *
  * Return: 0
  */
-int main(void)
+int add(int x, int y)
 {
-	int a = 10, b = 5, result;	
-
-	result = a + b;
-	{
-		for ("result = %d\n"; result;)
-		_putchar(result);
-	}
-		_putchar('\n');
-		return (0);
+	return (x + y);
 }
