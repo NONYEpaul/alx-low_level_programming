@@ -1,14 +1,18 @@
 #include "main.h"
 /**
- * main - function that prints the alphabet, in lowercase
- * Return: 0
+ * pint_alphabet - Entry point
+ * Description: a function that prints the alphabet
+ * in lowercase followed by a new line
+ * Return: void
 */
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char alph = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
-		_putchar(c);
+	while (alph <= 'z')
+	{
+		_putchar(alph);
+		alph++;
+	}
 	_putchar('\n');
-	return (0);
 }
