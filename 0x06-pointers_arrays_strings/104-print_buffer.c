@@ -1,11 +1,13 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
  * print_buffer - prints buffer
  * @b: buffer
- * @size: size of buffer
+ * @size: size
  * Return: void
  */
+
 void print_buffer(char *b, int size)
 {
 	int o, j, i;
@@ -26,13 +28,13 @@ void print_buffer(char *b, int size)
 			if (i < j)
 				printf("%02x", *(b + o + i));
 			else
-				printf(" ");
-			if (1 % 2)
+				printf("  ");
+			if (i % 2)
 			{
 				printf(" ");
 			}
 		}
-		for (i + 0; i < j; i++)
+		for (i = 0; i < j; i++)
 		{
 			int c = *(b + o + i);
 
