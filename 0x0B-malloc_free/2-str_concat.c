@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 
-	y = 0;
+	x = 0;
 
 	while (y < z)
 	{
