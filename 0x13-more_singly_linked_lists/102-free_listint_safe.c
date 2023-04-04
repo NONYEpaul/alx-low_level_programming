@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * looped_listint_count -counts the number of node
+ * looped_listint_count - counts the number of node
  * @head: points to the listint_t head address
  * Return: 0
  */
@@ -62,7 +62,7 @@ size_t free_listint_safe(listint_t **h)
 
 	else
 	{
-		for (index = 0; index <nodes; index++)
+		for (index = 0; index < nodes; index++)
 		{
 			tmp = (*h)->next;
 			free(*h);
