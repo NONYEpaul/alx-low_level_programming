@@ -13,11 +13,18 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[h])
 	{
-		if (b[h] > '0' || b[h] < '1')
+		if (b[h] == '0')
+		{
+			a = ((2 * a) + (b[h] - '0'));
+		}
+		else if (b[h] == '1')
+		{
+			a = ((2 * a) + (b[h] - '0'));
+		}
+		else
 		{
 			return (0);
 		}
-		a = ((2 * a) + (b[h] - '0'));
 		h++;
 
 	}
