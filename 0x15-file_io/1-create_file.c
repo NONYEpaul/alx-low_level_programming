@@ -20,26 +20,30 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
+	else
+	{
+		close(open_file);
+		return (1);
+	}
+
 	if (text_content != NULL)
 	{
-		for (h = 0; text_content[h]; h++)
-
-		write_file = write(open_file, text_content, h);
-
-		if (write_file == -1)
-		{
-			close(open_file);
-			return (-1);
-		}
-		else
-		{
-			close(open_file);
-			return (1);
-		}
+		for (h = 0; text_content[h];)
+			h++;
 	}
-	else
+
+	write_file = write(open_file, text_content, h);
+
+	if (write_file == -1)
 	{
 		close(open_file);
 		return (-1);
 	}
+	else
+	{
+		close(open_file);
+		return (1);
+	}
+
+
 }
