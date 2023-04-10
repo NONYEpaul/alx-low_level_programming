@@ -8,22 +8,11 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int h, open_file, write_file;
+	int h = 0, open_file, write_file;
 
 	if (filename == NULL)
 	{
 		return (-1);
-	}
-	open_file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-	if (open_file == -1)
-	{
-		return (-1);
-	}
-	else
-	{
-		close(open_file);
-		return (1);
 	}
 
 	if (text_content != NULL)
@@ -32,18 +21,14 @@ int create_file(const char *filename, char *text_content)
 			h++;
 	}
 
+	open_file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	write_file = write(open_file, text_content, h);
 
-	if (write_file == -1)
-	{
-		close(open_file);
+	if (open_file == -1 || write_file == -1)
 		return (-1);
-	}
 	else
 	{
 		close(open_file);
 		return (1);
 	}
-
-
 }
